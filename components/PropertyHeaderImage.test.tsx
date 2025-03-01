@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import PropertyHeaderImage from "./PropertyHeaderImage";
-import "@testing-library/jest-dom/extend-expect";
+import "@testing-library/jest-dom";
 
 describe("PropertyHeaderImage", () => {
   it("renders the image with the correct src and alt attributes", () => {

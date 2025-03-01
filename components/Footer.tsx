@@ -3,7 +3,7 @@ import logo from "@/assets/images/logo.png";
 import { render, screen } from "@testing-library/react";
 
 // Functional Component with TypeScript
-export const Footer: React.FC<any> = () => {
+const Footer: React.FC<any> = () => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -31,3 +31,4 @@ export const Footer: React.FC<any> = () => {
     </footer>
   );
 };
+export default Footer;
