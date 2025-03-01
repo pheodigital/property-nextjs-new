@@ -1,8 +1,9 @@
 import Image from "next/image";
 import logo from "@/assets/images/logo.png";
+import { render, screen } from "@testing-library/react";
 
 // Functional Component with TypeScript
-const Footer: React.FC<any> = () => {
+export const Footer: React.FC<any> = () => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -30,5 +31,3 @@ const Footer: React.FC<any> = () => {
     </footer>
   );
 };
-
-export default Footer;
