@@ -1,13 +1,13 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect";
+import "@testing-library/jest-dom";
 import HomeProperties from "./HomeProperties";
-import Property from "@/models/Property";
-import connectDB from "@/config/database";
+import Property from "../models/Property";
+import connectDB from "../config/database";
 
 // Mock the database connection and Property model
-jest.mock("@/config/database");
-jest.mock("@/models/Property");
+jest.mock("../config/database");
+jest.mock("../models/Property");
 
 describe("HomeProperties Component", () => {
   beforeEach(async () => {
